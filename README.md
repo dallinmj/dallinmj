@@ -29,7 +29,7 @@ An AI medical scribe in daily use at Red Compass Health. The provider uploads a 
 [Live app](https://redscribe.redcompasshealth.com) (login required)
 
 <p align="center"><img src="assets/red-scribe-upload.png" width="800" alt="Red Scribe visit setup: pick diagnoses and upload the visit audio"></p>
-<p align="center"><img src="assets/red-scribe-note.png" width="800" alt="Red Scribe generated treatment plan with voice-edit panel, for a test patient"></p>
+<p align="center"><img src="assets/red-scribe-treatment.png" width="800" alt="Red Scribe generated treatment plan with voice-edit panel, for a test patient"></p>
 
 ### Spruce
 
