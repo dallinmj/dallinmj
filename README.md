@@ -49,7 +49,7 @@ A scripture reader for web, iOS, and Android. It covers the basics of the Gospel
 
 `Flutter` `Firebase` `OpenAI embeddings`
 
-[Live app](https://gosepl-library.web.app)
+[Live app](https://gospel-library.web.app)
 
 <p align="center"><img src="assets/gospel-library.png" width="640" alt="Gospel Library 2.0 library, reader with study notes beside each verse, and side-by-side KJV and NLT compare"></p>
 
