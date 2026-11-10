@@ -45,13 +45,13 @@ Spruce helps you keep track of the people you meet. After a conversation, you re
 
 ### Gospel Library 2.0
 
-A scripture reader for web, iOS, and Android. It covers the basics of the Gospel Library app and adds what I kept wishing it had: side-by-side compare across books and Bible translations, search by meaning instead of exact wording, and highlights and notes that sync across devices. You can import your highlights, notes, notebooks, and bookmarks from the official Gospel Library app, so switching over doesn't mean starting from scratch.
+A scripture reader for web, iOS, and Android. It covers the basics of the Gospel Library app and adds what I kept wishing it had: side-by-side compare across books and Bible translations, search by meaning instead of exact wording, study notes from Come, Follow Me and the Institute and Seminary manuals shown next to each verse, and highlights and notes that sync across devices. You can import your highlights, notes, notebooks, and bookmarks from the official Gospel Library app, so switching over doesn't mean starting from scratch.
 
 `Flutter` `Firebase` `OpenAI embeddings`
 
 [Live app](https://gosepl-library.web.app)
 
-<p align="center"><img src="assets/gospel-library.png" width="640" alt="Gospel Library 2.0 library, reader, and side-by-side KJV and NLT compare screens"></p>
+<p align="center"><img src="assets/gospel-library.png" width="640" alt="Gospel Library 2.0 library, reader with study notes beside each verse, and side-by-side KJV and NLT compare"></p>
 
 ### Budget
 
