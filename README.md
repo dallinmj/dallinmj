@@ -10,7 +10,7 @@ Right now I'm cofounding **Argus**, a stove-safety startup, leading the computer
 
 ## Projects
 
-Most of these are in private repos. I'm happy to walk through any of the code.
+Most of these are in private repos.
 
 ### Argus
 
