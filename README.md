@@ -18,6 +18,8 @@ Stove safety for older adults, and a startup I'm building with friends. Argus is
 
 `Flutter` `Bluetooth LE` `Shelly local + cloud APIs` `ESP32` `Raspberry Pi`
 
+<p align="center"><img src="assets/argus.png" width="520" alt="Argus app: live stove status with power draw and daily usage, and the alert settings"></p>
+
 ### Red Scribe
 
 An AI medical scribe in daily use at Red Compass Health. The provider uploads a visit recording, and Red Scribe transcribes it and drafts the history of present illness and the treatment plan. The provider can then revise the plan by speaking edits instead of typing them. It connects to the clinic's Charm EHR and sends appointment reminders by text, with monitoring for failed sends. Heavy transcription and charting jobs run on a separate worker service, and every action is audit-logged for HIPAA.
