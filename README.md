@@ -1,8 +1,8 @@
 # Hi, I'm Dallin
 
-I'm a computer science student at BYU (machine learning emphasis, graduating May 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
+I'm a machine learning student at BYU (B.S. Machine Learning, graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
 
-Right now I'm building **Argus**, a stove-safety startup, and doing ML research at BYU on computer vision and LLM evaluation.
+Right now I'm cofounding **Argus**, a stove-safety startup, leading the computer vision team at BYU's Record Linking Lab, and researching how LLMs handle ethics and faith in BYU's PCCL lab.
 
 ---
 
@@ -15,6 +15,12 @@ Most of these are in private repos. I'm happy to walk through any of the code.
 Stove safety for older adults, and a startup I'm building with friends. Argus is a smart plug for the stove that turns it off automatically after a set time and alerts you when it's been left on. It also tracks usage, so families can worry less about a parent who lives alone. The app pairs with the plug over Bluetooth and controls it on the local network or through the cloud.
 
 `Flutter` `Bluetooth LE` `Shelly local + cloud APIs` `ESP32` `Raspberry Pi`
+
+### Red Scribe
+
+An AI medical scribe I designed and built at Red Compass Health. The provider records a patient visit, and Red Scribe transcribes it and drafts the chart note and treatment plan in the clinic's own format, ready to review and sign. It syncs with the clinic's EHR and CRM, so visit data and appointment reminders don't have to be entered twice. Patient data stays in HIPAA-compliant storage.
+
+`OpenAI transcription + LLMs` `RAG` `Google Cloud` `EHR + CRM APIs`
 
 ### Spruce
 
@@ -46,6 +52,12 @@ A personal finance dashboard that runs on your own computer. It pulls transactio
 
 <p align="center"><img src="assets/budget.png" width="800" alt="Budget dashboard with demo data"></p>
 
+### Still
+
+An Android app that keeps me off YouTube. It runs a local DNS-only VPN that answers lookups for blocked sites with NXDOMAIN and leaves all other traffic alone. A friend holds a rotating authenticator code, and I need that code to take a break or unblock a site. Breaks end on their own after 15 minutes.
+
+`Kotlin` `Jetpack Compose` `Android VpnService` `TOTP`
+
 ### Sib-journal
 
 A voice-first journal. You talk for a minute, and it transcribes the recording, cleans it up into a readable entry with a title and mood, and makes your entries searchable by meaning ("times I felt overwhelmed"). Entries are stored on your device.
@@ -55,12 +67,6 @@ A voice-first journal. You talk for a minute, and it transcribes the recording, 
 [Live app](https://dallinmj.github.io/Sib-journal/)
 
 <p align="center"><img src="assets/sib-journal.png" width="420" alt="Sib-journal feed and collage views"></p>
-
-### Focus Blocker
-
-An Android app that keeps me off YouTube. It runs a local DNS-only VPN that answers lookups for blocked sites with NXDOMAIN and leaves all other traffic alone. A friend holds a rotating authenticator code, and I need that code to take a break or unblock a site. Breaks end on their own after 15 minutes.
-
-`Kotlin` `Jetpack Compose` `Android VpnService` `TOTP`
 
 ### ML Research Trends
 
@@ -72,20 +78,20 @@ How fast are different areas of ML research growing? We pulled papers from Seman
 
 <p align="center"><img src="assets/ml-research-trends.png" width="800" alt="UMAP of transformer paper abstracts colored by year"></p>
 
-### Smaller projects
-
-- **[Scripture Memorizer](https://github.com/dallinmj/scripture_memorizer):** hides more and more of a verse until you can say it from memory. Plain HTML, CSS, and JavaScript.
-- **[Chess](https://github.com/dallinmj/chess):** a multiplayer chess server and terminal client in Java with HTTP, WebSockets, and MySQL, built for BYU CS 240.
-- **[NFL Play Predictor](https://github.com/rkgreathouse/NFL_Play_Predictor):** a group project predicting run vs. pass from game situation, using ten seasons of play-by-play data.
-- **[Multi-modal Education AI](https://github.com/BYU-PCCL/multi-modal-education-ai):** research code from BYU's PCCL lab that turns a lesson prompt into a Manim math animation.
-
 ---
+
+## Research
+
+- **Computer Vision Team Lead**, BYU Record Linking Lab (advisor: Dr. Joe Price). I lead a five-person team reading handwritten historical records for FamilySearch. We extracted 7.9 million 1930s Paris census records, raised WWI draft card extraction accuracy from 73% to 97% with an ensemble of 15 fine-tuned models, and got a 112x throughput gain on LLM OCR with vLLM.
+- **Research Assistant**, BYU Perception, Control, and Cognition Lab (advisor: Dr. David Wingate). I built a pipeline that pulled ethical questions out of 3.2 million ChatGPT conversations, benchmarked 27 LLMs on ethics and faith, and use interpretability methods to study why models leave religion out of their answers.
+- **Paper:** [Omissive Bias in Religious Representation: Benchmarking LLM Answers to Everyday Ethical Decision-making](https://arxiv.org/abs/2605.24319) (coauthor, 2026 preprint)
+- **[Multi-modal Education AI](https://github.com/BYU-PCCL/multi-modal-education-ai):** PCCL research code that turns a lesson prompt into a Manim math animation.
 
 ## Experience
 
-- **Research Assistant**, BYU Computer Vision & Record Linking Lab: computer vision pipelines that read handwritten historical census records for FamilySearch
-- **Research Assistant**, BYU Faith Benchmark: benchmarks for how AI models discuss and represent different religions
-- **AI & Software Engineer**, Red Compass Health: an AI charting pipeline that drafts SOAP notes and treatment plans, with HIPAA-compliant storage and RAG over medical documentation
+- **Cofounder & Software Engineer**, Argus Home (2026–present)
+- **AI & Software Engineer**, Red Compass Health (2024–present): Red Scribe, plus EHR and CRM integrations
 - **Software Engineer**, White Pine Financial: Python automation for investment management workflows
+- **Leader**, BYU AI Club (2026–present): workshops and hackathons on using AI well
 
-**Tools I use most:** Python, PyTorch, Dart/Flutter, Kotlin, Java, JavaScript, SQL, FastAPI, Firebase
+**Tools I use most:** Python, PyTorch, Hugging Face, vLLM, Dart/Flutter, Kotlin, Java, JavaScript, SQL, FastAPI, Firebase
