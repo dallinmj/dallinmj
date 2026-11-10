@@ -39,7 +39,7 @@ Spruce helps you keep track of the people you meet. After a conversation, you re
 
 [Live app](https://spruce-c82fa.web.app/)
 
-<p align="center"><img src="assets/spruce.png" width="210" alt="Spruce sign-in screen"></p>
+<p align="center"><img src="assets/spruce.png" width="860" alt="Spruce voice recap, network tree, people list, and contact detail screens (sample data)"></p>
 
 ### Gospel Library 2.0
 
