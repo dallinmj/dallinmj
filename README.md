@@ -18,7 +18,7 @@ Stove safety for older adults, and a startup I'm building with friends. Argus is
 
 `Flutter` `Bluetooth LE` `Shelly local + cloud APIs` `ESP32` `Raspberry Pi`
 
-<p align="center"><img src="assets/argus.png" width="520" alt="Argus app: live stove status with power draw and daily usage, and the alert settings"></p>
+<p align="center"><img src="assets/argus.png" width="720" alt="Argus app: sign-in, live stove status with power draw and daily usage, and the alert settings"></p>
 
 ### Red Scribe
 
