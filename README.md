@@ -37,7 +37,7 @@ Spruce helps you keep track of the people you meet. After a conversation, you re
 
 `Flutter` `FastAPI` `PostgreSQL + pgvector` `Gemini` `Render`
 
-[Live app](https://spruce-c82fa.web.app/) · [Code](https://github.com/dallinmj/spruce)
+[Live app](https://spruce-c82fa.web.app/)
 
 <p align="center"><img src="assets/spruce.png" width="210" alt="Spruce sign-in screen"></p>
 
