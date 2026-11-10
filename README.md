@@ -1,5 +1,7 @@
 # Hi, I'm Dallin
 
+[Resume (PDF)](assets/Dallin_Jacobs_Resume.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
+
 I'm a machine learning student at BYU (B.S. Machine Learning, graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
 
 Right now I'm cofounding **Argus**, a stove-safety startup, leading the computer vision team at BYU's Record Linking Lab, and researching how LLMs handle ethics and faith in BYU's PCCL lab.
@@ -30,7 +32,7 @@ Spruce helps you keep track of the people you meet. After a conversation, you re
 
 `Flutter` `FastAPI` `PostgreSQL + pgvector` `Gemini` `Render`
 
-[Live app](http://spruce.my) · [Code](https://github.com/wwwillott/cs-homecoming-hackathon)
+[Live app](https://spruce.my) · [Code](https://github.com/wwwillott/cs-homecoming-hackathon)
 
 <p align="center"><img src="assets/spruce.png" width="210" alt="Spruce sign-in screen"></p>
 
@@ -51,12 +53,15 @@ A personal finance dashboard that runs on your own computer. It pulls transactio
 `Python` `FastAPI` `SQLite` `Plaid`
 
 <p align="center"><img src="assets/budget.png" width="800" alt="Budget dashboard with demo data"></p>
+<p align="center"><img src="assets/budget-accounts.png" width="800" alt="Accounts page with linked bank, credit card, and investment accounts (demo data)"></p>
 
 ### Still
 
-An Android app that keeps me off YouTube. It runs a local DNS-only VPN that answers lookups for blocked sites with NXDOMAIN and leaves all other traffic alone. A friend holds a rotating authenticator code, and I need that code to take a break or unblock a site. Breaks end on their own after 15 minutes.
+A distraction blocker for my phone and my computer, built so I can't talk myself out of it. A friend holds a rotating authenticator code, and I need that code to turn protection off, remove a site, or take a break. Breaks end on their own after at most 15 minutes. On Android, Still runs a local DNS-only VPN that answers lookups for blocked sites with NXDOMAIN and leaves all other traffic alone. On Windows, a Tauri app drives a Chrome/Edge extension that blocks the list, and it closes the browser if the extension is turned off. Both share the same friend code, and five wrong codes lock entry for 10 minutes.
 
-`Kotlin` `Jetpack Compose` `Android VpnService` `TOTP`
+`Kotlin` `Jetpack Compose` `Android VpnService` `Rust` `Tauri` `React` `TOTP`
+
+<p align="center"><img src="assets/still-desktop.png" width="300" alt="Still desktop app with protection on and a blocklist">&nbsp;&nbsp;<img src="assets/still-blocked.png" width="420" alt="Still's blocked-site page in Chrome"></p>
 
 ### Sib-journal
 
@@ -67,6 +72,12 @@ A voice-first journal. You talk for a minute, and it transcribes the recording, 
 [Live app](https://dallinmj.github.io/Sib-journal/)
 
 <p align="center"><img src="assets/sib-journal.png" width="420" alt="Sib-journal feed and collage views"></p>
+
+### Kingdom Rush Agent
+
+Lets Claude Code or Codex play Kingdom Rush Battles on a real Android phone. A local MCP server streams the phone screen over USB, finds empty tower pads and reads gold and prices with template matching and OCR, and gives the model semantic actions like "build tower on pad 2" instead of raw taps. Each action runs as a guarded macro that checks the screen is fresh and the purchase is valid before it commits, so a stale frame can't trigger a wrong buy. In early hands-off trials it won four matches in a row, though it isn't reliable yet.
+
+`Python` `MCP` `scrcpy + ADB` `OpenCV` `OCR`
 
 ### ML Research Trends
 
@@ -91,7 +102,7 @@ How fast are different areas of ML research growing? We pulled papers from Seman
 
 - **Cofounder & Software Engineer**, Argus Home (2026–present)
 - **AI & Software Engineer**, Red Compass Health (2024–present): Red Scribe, plus EHR and CRM integrations
-- **Software Engineer**, White Pine Financial: Python automation for investment management workflows
+- **Software Engineer**, White Pine Financial: Python automation for investment workflows
 - **Leader**, BYU AI Club (2026–present): workshops and hackathons on using AI well
 
 **Tools I use most:** Python, PyTorch, Hugging Face, vLLM, Dart/Flutter, Kotlin, Java, JavaScript, SQL, FastAPI, Firebase
