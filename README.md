@@ -1,6 +1,6 @@
 # Hi, I'm Dallin
 
-[Resume (PDF)](assets/Dallin_Jacobs_Resume.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
+[LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Resume (PDF)](assets/Dallin_Jacobs_Resume.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
 
 I'm a machine learning student at BYU (B.S. Machine Learning, graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
 
@@ -20,9 +20,11 @@ Stove safety for older adults, and a startup I'm building with friends. Argus is
 
 ### Red Scribe
 
-An AI medical scribe I designed and built at Red Compass Health. The provider records a patient visit, and Red Scribe transcribes it and drafts the chart note and treatment plan in the clinic's own format, ready to review and sign. It syncs with the clinic's EHR and CRM, so visit data and appointment reminders don't have to be entered twice. Patient data stays in HIPAA-compliant storage.
+An AI medical scribe in daily use at Red Compass Health. The provider uploads a visit recording, and Red Scribe transcribes it and drafts the history of present illness and the treatment plan. The provider can then revise the plan by voice ("add magnesium, drop the follow-up labs"). It connects to the clinic's Charm EHR and sends appointment reminders by text, with monitoring for failed sends. Heavy transcription and charting jobs run on a separate worker service, and every action is audit-logged for HIPAA.
 
-`OpenAI transcription + LLMs` `RAG` `Google Cloud` `EHR + CRM APIs`
+`FastAPI` `HTMX + Tailwind` `PostgreSQL` `OpenAI Whisper + GPT` `Cloud Run + Cloud Tasks` `Terraform` `Firebase Auth`
+
+[Live app](https://redscribe.redcompasshealth.com) (login required)
 
 ### Spruce
 
@@ -73,12 +75,6 @@ A voice-first journal. You talk for a minute, and it transcribes the recording, 
 
 <p align="center"><img src="assets/sib-journal.png" width="420" alt="Sib-journal feed and collage views"></p>
 
-### Kingdom Rush Agent
-
-Lets Claude Code or Codex play Kingdom Rush Battles on a real Android phone. A local MCP server streams the phone screen over USB, finds empty tower pads and reads gold and prices with template matching and OCR, and gives the model semantic actions like "build tower on pad 2" instead of raw taps. Each action runs as a guarded macro that checks the screen is fresh and the purchase is valid before it commits, so a stale frame can't trigger a wrong buy. In early hands-off trials it won four matches in a row, though it isn't reliable yet.
-
-`Python` `MCP` `scrcpy + ADB` `OpenCV` `OCR`
-
 ### ML Research Trends
 
 How fast are different areas of ML research growing? We pulled papers from Semantic Scholar on transformers, RAG, chain-of-thought reasoning, and vision-language models. We embedded the abstracts with Qwen3-Embedding-4B and built a Python package and Streamlit app to explore the results.
@@ -96,7 +92,6 @@ How fast are different areas of ML research growing? We pulled papers from Seman
 - **Computer Vision Team Lead**, BYU Record Linking Lab (advisor: Dr. Joe Price). I lead a five-person team reading handwritten historical records for FamilySearch. We extracted 7.9 million 1930s Paris census records, raised WWI draft card extraction accuracy from 73% to 97% with an ensemble of 15 fine-tuned models, and got a 112x throughput gain on LLM OCR with vLLM.
 - **Research Assistant**, BYU Perception, Control, and Cognition Lab (advisor: Dr. David Wingate). I built a pipeline that pulled ethical questions out of 3.2 million ChatGPT conversations, benchmarked 27 LLMs on ethics and faith, and use interpretability methods to study why models leave religion out of their answers.
 - **Paper:** [Omissive Bias in Religious Representation: Benchmarking LLM Answers to Everyday Ethical Decision-making](https://arxiv.org/abs/2605.24319) (coauthor, 2026 preprint)
-- **[Multi-modal Education AI](https://github.com/BYU-PCCL/multi-modal-education-ai):** PCCL research code that turns a lesson prompt into a Manim math animation.
 
 ## Experience
 
