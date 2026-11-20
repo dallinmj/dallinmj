@@ -2,7 +2,7 @@
 
 [LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Resume (PDF)](assets/Dallin_Jacobs_Resume_Grad.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
 
-I'm a computer science student at BYU with an emphasis in machine learning (graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
+I'm a computer science student at BYU with an emphasis in machine learning (graduating April 2027). I like building things people actually use, and many of the projects below started as something I wanted for myself.
 
 I work as an AI and software engineer at Red Compass Health, where I build [Red Scribe](#red-scribe), an AI charting tool for clinicians. At BYU, I lead the computer vision team at the Record Linking Lab and study how language models handle faith and ethics in the Perception, Control, and Cognition Lab. I'm also a cofounder of [Argus Home](#argus), a stove-safety startup.
 
