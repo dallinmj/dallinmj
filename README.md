@@ -1,10 +1,18 @@
 # Hi, I'm Dallin
 
-[LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Resume (PDF)](assets/Dallin_Jacobs_Resume.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
+[LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Resume (PDF)](assets/Dallin_Jacobs_Resume_Grad.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
 
-I'm a machine learning student at BYU (B.S. Machine Learning, graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
+I'm a computer science student at BYU with an emphasis in machine learning (graduating April 2027). I like building things people actually use, and most of the projects below started as something I wanted for myself.
 
-Right now I'm cofounding **Argus**, a stove-safety startup, leading the computer vision team at BYU's Record Linking Lab, and researching how LLMs handle ethics and faith in BYU's PCCL lab.
+I work as an AI and software engineer at Red Compass Health, where I build [Red Scribe](#red-scribe), an AI charting tool for clinicians. At BYU, I lead the computer vision team at the Record Linking Lab and study how language models handle faith and ethics in the Perception, Control, and Cognition Lab. I'm also a cofounder of [Argus Home](#argus), a stove-safety startup.
+
+---
+
+## Research
+
+- **Research Assistant**, BYU Perception, Control, and Cognition Lab (Dr. David Wingate). I built an ethical-question extraction pipeline for the updated AllFaith benchmark using 3.2 million WildChat conversations. I analyzed responses from a 27-model benchmark and follow-up studies, and I trained and released two [Jacobian lenses for Qwen](https://huggingface.co/dallinmj/Qwen3.5-Jacobian-Lenses) to study when models omit religious perspectives in ethical advice. I presented our findings to the [Consortium for Evaluating Faith and Ethics in AI](https://cefeai.org/).
+- **Paper:** [Omissive Bias in Religious Representation: Benchmarking LLM Answers to Everyday Ethical Decision-making](https://arxiv.org/abs/2605.24319) (coauthor, 2026 preprint)
+- **Computer Vision Team Lead**, BYU Record Linking Lab (Dr. Joe Price). I lead a five-person team working on historical records. We extracted 18 million person records from French censuses (1911–1946) and improved WWI draft-card extraction accuracy from 73% to 97% with an ensemble of 15 fine-tuned vision-language models. I migrated OCR inference to vLLM, increasing throughput 74× to 26,000 table cells per hour.
 
 ---
 
@@ -92,16 +100,10 @@ How fast are different areas of ML research growing? We pulled papers from Seman
 
 ---
 
-## Research
-
-- **Computer Vision Team Lead**, BYU Record Linking Lab (advisor: Dr. Joe Price). I lead a five-person team reading handwritten historical records for FamilySearch. We extracted 7.9 million 1930s Paris census records, raised WWI draft card extraction accuracy from 73% to 97% with an ensemble of 15 fine-tuned models, and got a 112x throughput gain on LLM OCR with vLLM.
-- **Research Assistant**, BYU Perception, Control, and Cognition Lab (advisor: Dr. David Wingate). I built a pipeline that pulled ethical questions out of 3.2 million ChatGPT conversations, benchmarked 27 LLMs on ethics and faith, and use interpretability methods to study why models leave religion out of their answers.
-- **Paper:** [Omissive Bias in Religious Representation: Benchmarking LLM Answers to Everyday Ethical Decision-making](https://arxiv.org/abs/2605.24319) (coauthor, 2026 preprint)
-
 ## Experience
 
-- **Cofounder & Software Engineer**, Argus Home (2026–present)
-- **AI & Software Engineer**, Red Compass Health (2024–present): Red Scribe, plus EHR and CRM integrations
+- **Cofounder and Software Engineer**, Argus Home (January 2026–present): Flutter app development and prototype hardware evaluation
+- **AI and Software Engineer**, Red Compass Health (December 2024–present): Red Scribe clinical charting, EHR and CRM integrations, and Google Cloud deployment
 - **Software Engineer**, White Pine Financial: Python automation for investment workflows
 - **Leader**, BYU AI Club (2026–present): workshops and hackathons on using AI well
 
