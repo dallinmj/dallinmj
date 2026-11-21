@@ -8,19 +8,19 @@ I study computer science with an emphasis in machine learning at BYU. My researc
 
 ### Faith and ethics in language models
 
-In David Wingate’s lab, we study how language models handle questions about faith and ethics, including when their answers leave out religious perspectives. I built a pipeline to find everyday ethical questions in WildChat, helped analyze how models answered them, and released two Jacobian lenses for Qwen to explore what was happening inside the models.
+In Dr. David Wingate’s lab, I study how language models handle questions about faith and ethics, including when their answers leave out religious perspectives. I built a pipeline to find everyday ethical questions in WildChat, helped analyze how models answered them, and released two Jacobian lenses for Qwen to explore what was happening inside the models.
 
 [Read the preprint](https://arxiv.org/abs/2605.24319) · [Explore the Jacobian lenses](https://huggingface.co/dallinmj/Qwen3.5-Jacobian-Lenses)
 
 ### Extracting high-quality data from historical documents at scale
 
-I lead the computer vision team in Joe Price’s Record Linking Lab. We turn scans of historical documents into structured data people can search and study. Our projects include World War I draft cards, the Mexican census, the 1920 U.S. census, Paris census records, U.S. land status records, and college yearbooks. I work on getting models to read these documents reliably and building OCR pipelines that can process them at scale.
+I lead the computer vision team in Dr. Joe Price’s Record Linking Lab. I turn scans of historical documents into structured data people can search and study. Projects include World War I draft cards, the Mexican census, the 1920 U.S. census, Paris census records, U.S. land status records, and college yearbooks. I work on getting models to read these documents reliably and building OCR pipelines that can process them at scale.
 
 ## Projects
 
 ### Red Scribe
 
-Clinicians can upload a visit recording, review a draft clinical note, and revise the treatment plan by speaking their edits. I built the charting workflow and work on how it connects to the clinic’s electronic health record.
+Red Scribe uses AI to transcribe a patient visit and draft the clinical note and a personalized treatment plan. Clinicians review the draft and revise the treatment plan by speaking their edits. I built the charting workflow and work on how it connects to the clinic’s electronic health record.
 
 [Live app](https://redscribe.redcompasshealth.com) (login required)
 
@@ -35,7 +35,7 @@ I co-founded Argus Home to build a smart plug that lets people check whether the
 
 ### Spruce
 
-Record a quick voice recap after meeting someone, and Spruce turns it into a searchable contact with notes. We built it for BYU’s Homecoming Hackathon and took first place.
+Record a quick voice recap after meeting someone, and Spruce turns it into a searchable contact with notes. I built it for BYU’s Homecoming Hackathon, where it took first place.
 
 [Live app](https://spruce-c82fa.web.app/)
 
@@ -72,7 +72,7 @@ A voice-first journal that turns recordings into written entries and lets you fi
 
 ### ML Research Trends
 
-We built an interactive explorer to see how different areas of machine learning research have grown over time and how papers cluster by topic.
+I built an interactive explorer to see how different areas of machine learning research have grown over time and how papers cluster by topic.
 
 [Project site](https://dallinmj.github.io/ml_research_trends/) · [Code](https://github.com/dallinmj/ml_research_trends)
 
