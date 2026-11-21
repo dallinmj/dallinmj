@@ -1,51 +1,41 @@
-# Hi, I'm Dallin
+# Hi, I’m Dallin
 
-[LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Resume (PDF)](assets/Dallin_Jacobs_Resume_Grad.pdf) · [dallin62@byu.edu](mailto:dallin62@byu.edu)
+I study computer science with an emphasis in machine learning at BYU. My research there focuses on evaluating language models and extracting data from historical documents. I also build [Red Scribe](#red-scribe) at Red Compass Health and co-founded [Argus Home](#argus-home), a stove-safety startup.
 
-I'm a computer science student at BYU with an emphasis in machine learning (graduating April 2027). I like building things people actually use, and many of the projects below started as something I wanted for myself.
-
-I work as an AI and software engineer at Red Compass Health, where I build [Red Scribe](#red-scribe), an AI charting tool for clinicians. At BYU, I lead the computer vision team at the Record Linking Lab and study how language models handle faith and ethics in the Perception, Control, and Cognition Lab. I'm also a cofounder of [Argus Home](#argus), a stove-safety startup.
-
----
+[Résumé (PDF)](assets/Dallin_Jacobs_Resume_Grad.pdf) · [LinkedIn](https://www.linkedin.com/in/dallin-jacobs-byu/) · [Email](mailto:dallin62@byu.edu)
 
 ## Research
 
-- **Research Assistant**, BYU Perception, Control, and Cognition Lab (Dr. David Wingate). I built an ethical-question extraction pipeline for the updated AllFaith benchmark using 3.2 million WildChat conversations. I analyzed responses from a 27-model benchmark and follow-up studies, and I trained and released two [Jacobian lenses for Qwen](https://huggingface.co/dallinmj/Qwen3.5-Jacobian-Lenses) to study when models omit religious perspectives in ethical advice. I presented our findings to the [Consortium for Evaluating Faith and Ethics in AI](https://cefeai.org/).
-- **Paper:** [Omissive Bias in Religious Representation: Benchmarking LLM Answers to Everyday Ethical Decision-making](https://arxiv.org/abs/2605.24319) (coauthor, 2026 preprint)
-- **Computer Vision Team Lead**, BYU Record Linking Lab (Dr. Joe Price). I lead a five-person team working on historical records. We extracted 18 million person records from French censuses (1911–1946) and improved WWI draft-card extraction accuracy from 73% to 97% with an ensemble of 15 fine-tuned vision-language models. I migrated OCR inference to vLLM, increasing throughput 74× to 26,000 table cells per hour.
+### Faith and ethics in language models
 
----
+In David Wingate’s lab, we study how language models handle questions about faith and ethics, including when their answers leave out religious perspectives. I built a pipeline to find everyday ethical questions in WildChat, helped analyze how models answered them, and released two Jacobian lenses for Qwen to explore what was happening inside the models.
+
+[Read the preprint](https://arxiv.org/abs/2605.24319) · [Explore the Jacobian lenses](https://huggingface.co/dallinmj/Qwen3.5-Jacobian-Lenses)
+
+### Extracting high-quality data from historical documents at scale
+
+I lead the computer vision team in Joe Price’s Record Linking Lab. We turn scans of historical documents into structured data people can search and study. Our projects include World War I draft cards, the Mexican census, the 1920 U.S. census, Paris census records, U.S. land status records, and college yearbooks. I work on getting models to read these documents reliably and building OCR pipelines that can process them at scale.
 
 ## Projects
 
-Most of these are in private repos.
-
-### Argus
-
-Stove safety for older adults, and a startup I'm building with friends. Argus is a smart plug for the stove that turns it off automatically after a set time and alerts you when it's been left on. It also tracks usage, so families can worry less about a parent who lives alone. The app pairs with the plug over Bluetooth and controls it on the local network or through the cloud.
-
-`Flutter` `Bluetooth LE` `Shelly local + cloud APIs` `ESP32` `Raspberry Pi`
-
-<p align="center"><img src="assets/argus.png" width="720" alt="Argus app: sign-in, live stove status with power draw and daily usage, and the alert settings"></p>
-
 ### Red Scribe
 
-An AI medical scribe in daily use at Red Compass Health. The provider uploads a visit recording, and Red Scribe transcribes it and drafts the history of present illness and the treatment plan. The provider can then revise the plan by speaking edits instead of typing them. It connects to the clinic's Charm EHR and sends appointment reminders by text, with monitoring for failed sends. Heavy transcription and charting jobs run on a separate worker service, and every action is audit-logged for HIPAA.
-
-`FastAPI` `HTMX + Tailwind` `PostgreSQL` `OpenAI Whisper + GPT` `Cloud Run + Cloud Tasks` `Terraform` `Firebase Auth`
+Clinicians can upload a visit recording, review a draft clinical note, and revise the treatment plan by speaking their edits. I built the charting workflow and work on how it connects to the clinic’s electronic health record.
 
 [Live app](https://redscribe.redcompasshealth.com) (login required)
 
 <p align="center"><img src="assets/red-scribe-upload.png" width="800" alt="Red Scribe visit setup: pick diagnoses and upload the visit audio"></p>
 <p align="center"><img src="assets/red-scribe-treatment.png" width="800" alt="Red Scribe generated treatment plan with voice-edit panel, for a test patient"></p>
 
+### Argus Home
+
+I co-founded Argus Home to build a smart plug that lets people check whether their stove is on and turn it off remotely. I built the Flutter app and helped evaluate relays, circuit board layouts, and wiring options for the prototype.
+
+<p align="center"><img src="assets/argus.png" width="720" alt="Argus app: sign-in, live stove status with power draw and daily usage, and the alert settings"></p>
+
 ### Spruce
 
-**1st place, BYU Homecoming Hackathon**
-
-Spruce helps you keep track of the people you meet. After a conversation, you record a quick voice recap. Spruce transcribes it, drafts a contact with notes, and adds that person to your network, where you can search it later ("who do I know in biotech?") and see how people connect. It was a team project, and I built most of it: the Flutter app, the API, and the transcription and search pipeline.
-
-`Flutter` `FastAPI` `PostgreSQL + pgvector` `Gemini` `Render`
+Record a quick voice recap after meeting someone, and Spruce turns it into a searchable contact with notes. We built it for BYU’s Homecoming Hackathon and took first place.
 
 [Live app](https://spruce-c82fa.web.app/)
 
@@ -53,9 +43,7 @@ Spruce helps you keep track of the people you meet. After a conversation, you re
 
 ### Gospel Library 2.0
 
-A scripture reader for web, iOS, and Android. It covers the basics of the Gospel Library app and adds what I kept wishing it had: side-by-side compare across books and Bible translations, search by meaning instead of exact wording, study notes from Come, Follow Me and the Institute and Seminary manuals shown next to each verse, and highlights and notes that sync across devices. You can import your highlights, notes, notebooks, and bookmarks from the official Gospel Library app, so switching over doesn't mean starting from scratch.
-
-`Flutter` `Firebase` `OpenAI embeddings`
+I built a scripture reader with side-by-side translations, search by meaning, and study notes alongside the verses.
 
 [Live app](https://gospel-library.web.app)
 
@@ -63,26 +51,20 @@ A scripture reader for web, iOS, and Android. It covers the basics of the Gospel
 
 ### Budget
 
-A personal finance dashboard that runs on your own computer. It pulls transactions from your banks through Plaid or imports bank export files. It categorizes everything and shows spending pace, budgets, savings goals, and net worth. Your data lives in a local database, not someone else's server.
-
-`Python` `FastAPI` `SQLite` `Plaid`
+A personal finance dashboard that imports transactions and tracks spending, savings goals, and net worth in a local database.
 
 <p align="center"><img src="assets/budget.png" width="800" alt="Budget dashboard with demo data"></p>
 <p align="center"><img src="assets/budget-accounts.png" width="800" alt="Accounts page with linked bank, credit card, and investment accounts (demo data)"></p>
 
 ### Still
 
-A distraction blocker for my phone and my computer, built so I can't talk myself out of it. A friend holds a rotating authenticator code, and I need that code to turn protection off, remove a site, or take a break. Breaks end on their own after at most 15 minutes. On Android, Still runs a local DNS-only VPN that answers lookups for blocked sites with NXDOMAIN and leaves all other traffic alone. On Windows, a Tauri app drives a Chrome/Edge extension that blocks the list, and it closes the browser if the extension is turned off. Both share the same friend code, and five wrong codes lock entry for 10 minutes.
-
-`Kotlin` `Jetpack Compose` `Android VpnService` `Rust` `Tauri` `React` `TOTP`
+A distraction blocker for Android and Windows. I built it so a friend holds the code needed to turn off protection or take a break.
 
 <p align="center"><img src="assets/still-desktop.png" width="300" alt="Still desktop app with protection on and a blocklist">&nbsp;&nbsp;<img src="assets/still-blocked.png" width="420" alt="Still's blocked-site page in Chrome"></p>
 
 ### Sib-journal
 
-A voice-first journal. You talk for a minute, and it transcribes the recording, cleans it up into a readable entry with a title and mood, and makes your entries searchable by meaning ("times I felt overwhelmed"). Entries are stored on your device.
-
-`Flutter` `Riverpod` `Whisper` `OpenAI embeddings`
+A voice-first journal that turns recordings into written entries and lets you find them later by what you remember talking about.
 
 [Live app](https://dallinmj.github.io/Sib-journal/)
 
@@ -90,21 +72,8 @@ A voice-first journal. You talk for a minute, and it transcribes the recording, 
 
 ### ML Research Trends
 
-How fast are different areas of ML research growing? We pulled papers from Semantic Scholar on transformers, RAG, chain-of-thought reasoning, and vision-language models. We embedded the abstracts with Qwen3-Embedding-4B and built a Python package and Streamlit app to explore the results.
-
-`Python` `Semantic Scholar API` `Qwen3 embeddings` `UMAP` `Streamlit`
+We built an interactive explorer to see how different areas of machine learning research have grown over time and how papers cluster by topic.
 
 [Project site](https://dallinmj.github.io/ml_research_trends/) · [Code](https://github.com/dallinmj/ml_research_trends)
 
 <p align="center"><img src="assets/ml-research-trends.png" width="800" alt="UMAP of transformer paper abstracts colored by year"></p>
-
----
-
-## Experience
-
-- **Cofounder and Software Engineer**, Argus Home (January 2026–present): Flutter app development and prototype hardware evaluation
-- **AI and Software Engineer**, Red Compass Health (December 2024–present): Red Scribe clinical charting, EHR and CRM integrations, and Google Cloud deployment
-- **Software Engineer**, White Pine Financial: Python automation for investment workflows
-- **Leader**, BYU AI Club (2026–present): workshops and hackathons on using AI well
-
-**Tools I use most:** Python, PyTorch, Hugging Face, vLLM, Dart/Flutter, Kotlin, Java, JavaScript, SQL, FastAPI, Firebase
